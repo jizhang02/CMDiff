@@ -1,3 +1,14 @@
+"""
+Benchmark CMDiff for 3D left atrial cavity segmentation from LGE-MRI.
+
+Function: Evaluate trained models with DDIM, DPM-Solver Multistep, Euler,
+and UniPC across configured inference step counts. Export predicted masks
+and report Dice, HD95, average surface distance, and inference time.
+
+Author: Jing Zhang
+Created: 2026-07-23
+"""
+
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"  
 

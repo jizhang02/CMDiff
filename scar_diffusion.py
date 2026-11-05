@@ -1,7 +1,12 @@
 """
-MedSegDiff-style Training Script for MRI Scar Segmentation
-V2 + Dynamic Conditional Encoder (DCE)
-Supports gradient checkpointing via use_checkpoint=True (like MONAI models)
+Train CMDiff for 3D left atrial scar segmentation from LGE-MRI.
+
+Function: Train an image-conditioned, clean-mask diffusion model with a
+dynamic conditional encoder, validate segmentation Dice, and save model
+checkpoints. Supports exponential moving averages and gradient checkpointing.
+
+Author: Jing Zhang
+Created: 2026-07-23
 """
 
 import os

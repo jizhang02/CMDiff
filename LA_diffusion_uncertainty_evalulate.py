@@ -1,3 +1,15 @@
+"""
+Analyse repeated CMDiff predictions for left atrial cavity segmentation.
+
+Function: Repeat diffusion inference on LGE-MRI volumes and export mean
+probability, standard deviation, variance, entropy, and segmentation maps.
+Report prediction-dispersion summaries alongside segmentation metrics.
+Dispersion describes sampling variability, not calibrated error probability.
+
+Author: Jing Zhang
+Created: 2026-07-23
+"""
+
 import os
 import sys
 import json
