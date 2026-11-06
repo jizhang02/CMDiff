@@ -22,14 +22,14 @@ Click the figure for the original PDF.
 
 ## Repository contents
 
-- **Training:** [`LA_diffusion.py`](LA_diffusion.py) and
-  [`scar_diffusion.py`](scar_diffusion.py).
-- **Evaluation:** [`LA_diffusion_evaluate.py`](LA_diffusion_evaluate.py) and
-  [`scar_diffusion_evaluate.py`](scar_diffusion_evaluate.py); report Dice, HD95,
+- **Training:** [`LA_diffusion.py`](code/LA_diffusion.py) and
+  [`scar_diffusion.py`](code/scar_diffusion.py).
+- **Evaluation:** [`LA_diffusion_evaluate.py`](code/LA_diffusion_evaluate.py) and
+  [`scar_diffusion_evaluate.py`](code/scar_diffusion_evaluate.py); report Dice, HD95,
   ASD, and inference time.
 - **Repeated sampling:**
-  [`LA_diffusion_uncertainty_evalulate.py`](LA_diffusion_uncertainty_evalulate.py)
-  and [`scar_diffusion_uncertainty_evaluate.py`](scar_diffusion_uncertainty_evaluate.py);
+  [`LA_diffusion_uncertainty_evalulate.py`](code/LA_diffusion_uncertainty_evalulate.py)
+  and [`scar_diffusion_uncertainty_evaluate.py`](code/scar_diffusion_uncertainty_evaluate.py);
   export mean probability, standard deviation, variance, and entropy maps.
 
 ## Setup and data
@@ -65,16 +65,16 @@ Run the required command from the repository root:
 
 ```bash
 # Training (choose LA or scar)
-python LA_diffusion.py
-python scar_diffusion.py
+python code/LA_diffusion.py
+python code/scar_diffusion.py
 
 # Segmentation evaluation
-python LA_diffusion_evaluate.py
-python scar_diffusion_evaluate.py
+python code/LA_diffusion_evaluate.py
+python code/scar_diffusion_evaluate.py
 
 # Repeated-sampling analysis
-python LA_diffusion_uncertainty_evalulate.py
-python scar_diffusion_uncertainty_evaluate.py
+python code/LA_diffusion_uncertainty_evalulate.py
+python code/scar_diffusion_uncertainty_evaluate.py
 ```
 
 Results are saved under `results_dir` as checkpoints, NIfTI predictions, logs,
@@ -89,15 +89,11 @@ outputs, and reproducibility.
 
 Follow the dataset organisers' [citation guidance](https://zmiclab.github.io/projects/lascarqs22/faq.html):
 
-1. Li et al. **AtrialJSQnet: A New Framework for Joint Segmentation and Quantification
-   of Left Atrium and Scars Incorporating Spatial and Shape Information.**
-   *Medical Image Analysis*, 76:102303, 2022.
+1. Li et al. AtrialJSQnet: A New Framework for Joint Segmentation and Quantification of Left Atrium and Scars Incorporating Spatial and Shape Information. *Medical Image Analysis*, 76:102303, 2022.
    [Paper](https://www.sciencedirect.com/science/article/pii/S1361841521003480/).
-2. Li et al. **Medical Image Analysis on Left Atrial LGE MRI for Atrial Fibrillation
-   Studies: A Review.** *Medical Image Analysis*, 77:102360, 2022.
+2. Li et al. Medical Image Analysis on Left Atrial LGE MRI for Atrial Fibrillation Studies: A Review. *Medical Image Analysis*, 77:102360, 2022.
    [Paper](https://www.sciencedirect.com/science/article/abs/pii/S1361841522000135).
-3. Li et al. **AtrialGeneral: Domain Generalization for Left Atrial Segmentation
-   of Multi-center LGE MRIs.** *MICCAI 2021*, pp. 557?566, 2021.
+3. Li et al. AtrialGeneral: Domain Generalization for Left Atrial Segmentation of Multi-center LGE MRIs. *MICCAI 2021*, pp. 557-566, 2021.
    [DOI](https://doi.org/10.1007/978-3-030-87231-1_54).
 
 Code: [MIT License](LICENSE). Research use only; not validated for clinical decisions.

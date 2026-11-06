@@ -192,7 +192,7 @@ Run the following commands from the repository root.
 After setting the paths, fold loop, and `resume` options:
 
 ```bash
-python LA_diffusion.py
+python code/LA_diffusion.py
 ```
 
 The default configuration trains for 4000 epochs and validates every 10
@@ -209,7 +209,7 @@ Each additional fold is saved under its corresponding `fold_N` directory.
 After setting the paths and fold loop:
 
 ```bash
-python scar_diffusion.py
+python code/scar_diffusion.py
 ```
 
 The default configuration trains for 3000 epochs and validates every 10
@@ -232,7 +232,7 @@ Set `data_dir`, `json_path`, `model_dir`, `results_dir`, the fold loop, and the
 checkpoint filename in `LA_diffusion_evaluate.py`, then run:
 
 ```bash
-python LA_diffusion_evaluate.py
+python code/LA_diffusion_evaluate.py
 ```
 
 ### Evaluate scar segmentation
@@ -240,7 +240,7 @@ python LA_diffusion_evaluate.py
 Configure `scar_diffusion_evaluate.py`, then run:
 
 ```bash
-python scar_diffusion_evaluate.py
+python code/scar_diffusion_evaluate.py
 ```
 
 Both scripts compare:
@@ -270,7 +270,7 @@ are NumPy population standard deviations (`ddof=0`).
 Configure `LA_diffusion_uncertainty_evalulate.py`, then run:
 
 ```bash
-python LA_diffusion_uncertainty_evalulate.py
+python code/LA_diffusion_uncertainty_evalulate.py
 ```
 
 The current LA script uses 20 repeated samples and evaluates 20 and 50
@@ -281,7 +281,7 @@ inference steps.
 Configure `scar_diffusion_uncertainty_evaluate.py`, then run:
 
 ```bash
-python scar_diffusion_uncertainty_evaluate.py
+python code/scar_diffusion_uncertainty_evaluate.py
 ```
 
 The current scar script uses 20 repeated samples and evaluates 20, 50, 100,
