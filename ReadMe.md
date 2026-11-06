@@ -48,7 +48,7 @@ Data are not included; follow the provider's data-use terms.
 Prepare cropped, paired NIfTI images and five-fold JSON manifests:
 
 - **LA:** `datalist_5fold.json`, with `image` and `label_LA` entries.
-- **Scar:** `datalist_5fold_scarfixed.json`, with `image` and `label_scar` entries.
+- **Scar:** `datalist_5fold_scar.json`, with `image` and `label_scar` entries.
 
 Each fold contains `training` and `validation` lists; paths are relative to
 `data_dir`. See [Detailed usage](docs/usage.md#data-preparation) for examples.

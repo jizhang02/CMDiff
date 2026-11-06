@@ -82,17 +82,17 @@ cases per fold.
 ### Scar data
 
 `scar_diffusion.py` and the two scar evaluation scripts expect
-`datalist_5fold_scarfixed.json`.
+`datalist_5fold_scar.json`.
 
 Example directory:
 
 ```text
 train_data_cropped_60_384_256_40/
-├── datalist_5fold_scarfixed.json
+├── datalist_5fold_scar.json
 ├── train_02/
 │   ├── enhanced.nii.gz
-│   ├── atriumSegImgMO_wall.nii.gz
-│   └── scarSegImgM_fixed.nii.gz
+│   ├── atriumSegImgMO.nii.gz
+│   └── scarSegImgM.nii.gz
 └── ...
 ```
 
@@ -104,8 +104,8 @@ Example manifest structure:
     "training": [
       {
         "image": "train_02/enhanced.nii.gz",
-        "label_LA": "train_02/atriumSegImgMO_wall.nii.gz",
-        "label_scar": "train_02/scarSegImgM_fixed.nii.gz"
+        "label_LA": "train_02/atriumSegImgMO.nii.gz",
+        "label_scar": "train_02/scarSegImgM.nii.gz"
       }
     ],
     "validation": []
