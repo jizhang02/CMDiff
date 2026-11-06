@@ -107,11 +107,13 @@ Code: [MIT License](LICENSE). Research use only; not validated for clinical deci
 If you use this work, please cite:
 
 ```bibtex
-@misc{zhang2026cmdiff,
-  title  = {{CMDiff}: Left Atrial Scar Segmentation from {3D LGE MRI} Using Conditional Mask Diffusion Model: A Feasibility Study},
-  author = {Zhang, Jing and Bergere, Bastien and Leite, Jonas and Bollache, Emilie and Laredo, Mika{\"e}l and Redheuil, Alban and Kachenoura, Nadjia},
-  year   = {2026},
-  url    = {https://github.com/jizhang02/CMDiff},
-  note   = {Accompanying code repository}
+@misc{zhang2026cmdiffleftatrialscar,
+      title={CMDiff: Left Atrial Scar Segmentation from 3D LGE MRI Using Conditional Mask Diffusion Model: A Feasibility Study}, 
+      author={Jing Zhang and Bastien Bergere and Jonas Leite and Emilie Bollache and Mikaël Laredo and Alban Redheuil and Nadjia Kachenoura},
+      year={2026},
+      eprint={2611.07814},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2611.07814}, 
 }
 ```
