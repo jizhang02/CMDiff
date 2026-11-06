@@ -36,8 +36,8 @@ guaranteed.
 
 ## Data preparation
 
-The experiments use the [Official LaScarQS 2022](https://zmiclab.github.io/projects/lascarqs22/) dataset for LA and LA-scar segmentation.
-The dataset is not distributed with this repository. Obtain the LaScarQS
+The experiments use the public [LAScarQS 2022](https://zmiclab.github.io/projects/lascarqs22/) dataset for LA and LA-scar segmentation.
+The dataset is not distributed with this repository. Obtain the LAScarQS
 LGE-MRI images and annotations from the original dataset provider and comply
 with the corresponding data-use terms.
 

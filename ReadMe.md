@@ -25,8 +25,7 @@ Click the figure for the original PDF.
 - **Training:** [`LA_diffusion.py`](code/LA_diffusion.py) and
   [`scar_diffusion.py`](code/scar_diffusion.py).
 - **Evaluation:** [`LA_diffusion_evaluate.py`](code/LA_diffusion_evaluate.py) and
-  [`scar_diffusion_evaluate.py`](code/scar_diffusion_evaluate.py); report Dice, HD95,
-  ASD, and inference time.
+  [`scar_diffusion_evaluate.py`](code/scar_diffusion_evaluate.py).
 - **Repeated sampling:**
   [`LA_diffusion_uncertainty_evalulate.py`](code/LA_diffusion_uncertainty_evalulate.py)
   and [`scar_diffusion_uncertainty_evaluate.py`](code/scar_diffusion_uncertainty_evaluate.py);
@@ -41,9 +40,7 @@ PyTorch build, then the remaining dependencies:
 python -m pip install monai diffusers SimpleITK numpy
 ```
 
-Obtain LaScarQS from the [official website](https://zmiclab.github.io/projects/lascarqs22/)
-using its [data access instructions](https://zmiclab.github.io/projects/lascarqs22/data.html).
-Data are not included; follow the provider's data-use terms.
+The experiments use the public [LAScarQS 2022](https://zmiclab.github.io/projects/lascarqs22/) dataset for LA and LA scar segmentation.
 
 Prepare cropped, paired NIfTI images and five-fold JSON manifests:
 
